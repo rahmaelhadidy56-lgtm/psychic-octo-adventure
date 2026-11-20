@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>سنتر أجيال المستقبل</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff9fc;
+    text-align: center;
+    color: #444;
+}
+
+header {
+    background: #c9efff;
+    padding: 35px 15px;
+    border-radius: 0 0 35px 35px;
+}
+
+header h1 {
+    color: #7654cf;
+    font-size: 36px;
+}
+
+header h2 {
+    color: #ff79aa;
+}
+
+.welcome {
+    padding: 35px 15px;
+}
+
+.welcome p {
+    font-size: 19px;
+}
+
+.stages {
+    padding: 30px 15px;
+}
+
+.stages-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stage {
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px #ddd;
+}
+
+.stage h3 {
+    color: #7654cf;
+    font-size: 23px;
+}
+
+.stage p {
+    line-height: 1.8;
+}
+
+.kindergarten {
+    border-top: 8px solid #ffb7cf;
+}
+
+.foundation {
+    border-top: 8px solid #9ee5c0;
+}
+
+.curriculum {
+    border-top: 8px solid #a9dfff;
+}
+
+button {
+    background: #ff91b8;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background: #c9efff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌈 سنتر أجيال المستقبل</h1>
+    <h2>مستقبلك يبدأ من هنا ✨</h2>
+</header>
+
+<section class="welcome">
+
+    <h2>أهلاً بكم في عالم التعلم والتميز 💗</h2>
+
+    <p>
+        نساعد أطفالنا على التعلم والنمو
+        وبناء مستقبل مشرق 🌟
+    </p>
+
+</section>
+
+<section class="stages">
+
+    <h2>🎓 المراحل التعليمية</h2>
+
+    <div class="stages-container">
+
+        <div class="stage kindergarten">
+            <h3>🧸 الحضانة</h3>
+            <p>
+                بداية جميلة لرحلة التعلم
+                واللعب وتنمية المهارات.
+            </p>
+            <button onclick="showStage('nursery')">اكتشف المرحلة</button>
+        </div>
+
+        <div class="stage foundation">
+            <h3>🌱 مرحلة التأسيس</h3>
+            <p>
+                📖 اللغة العربية<br>
+                🔤 اللغة الإنجليزية<br>
+                ➗ الرياضيات<br>
+                📿 تحفيظ القرآن الكريم
+            </p>
+            <button onclick="showStage('foundation')">اكتشف المرحلة</button>
+        </div>
+
+        <div class="stage curriculum">
+            <h3>📚 مرحلة المنهج</h3>
+            <p>
+                📖 اللغة العربية<br>
+                🔤 اللغة الإنجليزية<br>
+                🔬 العلوم<br>
+                🌍 الدراسات<br>
+                ➗ الرياضيات
+            </p>
+          <button onclick="showStage('curriculum')">اكتشف المرحلة</button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>💗 سنتر أجيال المستقبل</h3>
+    <p>معاً نصنع جيلاً مبدعاً ومتميزاً</p>
+
+<section id="contact" style="background:#fff0f6; padding:35px 20px; margin:30px 0; border-radius:20px; text-align:center;">
+  <h2 style="color:#d94f91;">💌 تواصل معنا</h2>
+  <p>يسعدنا تواصلكم مع سنتر أجيال المستقبل 🌈</p>
+
+  <div style="background:white; padding:20px; margin:15px auto; border-radius:15px; max-width:450px;">
+    <h3>📞 رقم التواصل</h3>
+    <p dir="ltr">01203951638</p>
+
+    <h3>📍 عنوان السنتر</h3>
+    <p>أسيوط – الزاوية – شارع المكتبات – أمام استوديو رامي</p>
+
+    <h3>🕒 مواعيد العمل</h3>
+    <p>الجمعة والسبت: 10 صباحًا – 5 مساءً</p>
+    <p>الأحد إلى الخميس: 7 صباحًا – 5 مساءً</p>
+
+    <a href="https://wa.me/201203951638" target="_blank"
+       style="display:inline-block; background:#25D366; color:white; padding:12px 25px; border-radius:12px; text-decoration:none; margin-top:10px;">
+       تواصل معنا عبر واتساب 💚
+    </a>
+  </div>
+</section>
+
+
+
+<script>
+function showStage(stage) {
+  const messages = {
+    nursery: "مرحلة الحضانة 🌈\n\nنهتم بأطفالنا ونساعدهم على التعلم واللعب وتنمية مهاراتهم.",
+    foundation: "مرحلة التأسيس 🌱\n\n📖 اللغة العربية\n🔤 اللغة الإنجليزية\n➗ الرياضيات\n📿 تحفيظ القرآن الكريم",
+    curriculum: "مرحلة المنهج 📚\n\n📖 اللغة العربية\n🔤 اللغة الإنجليزية\n🔬 العلوم\n🌍 الدراسات الاجتماعية\n➗ الرياضيات"
+  };
+
+  alert(messages[stage]);
+}
+</script>
+
+</body>
+</html>
